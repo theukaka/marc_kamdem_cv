@@ -1,36 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marc – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Votre Nom</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portfolio professionnel — projets, contact, à propos">
 </head>
 <body>
-  <header>
-    <h1>Marc</h1>
-    <p>Étudiant ingénieur – nanotechnologies et nanoélectronique</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="name">Votre Nom</h1>
+      <p class="tagline">Développeur · Designer · Chercheur</p>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="projets">
-      <h2>Projets</h2>
-      <article>
-        <h3>Nom du projet</h3>
-        <p>Contexte, objectif, ma contribution, résultats.</p>
-        <a href="https://github.com/ton-pseudo/ton-projet">Voir le code</a>
-      </article>
+  <main class="container">
+    <section id="about">
+      <h2>À propos</h2>
+      <p id="bio">Remplacez ce texte par une courte présentation professionnelle. Indiquez vos technologies favorites, votre spécialité et ce qui vous motive.</p>
     </section>
 
-    <section id="a-propos">
-      <h2>À propos</h2>
-      <p>Ton parcours, tes compétences, tes langues.</p>
+    <section id="projects">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Exemple : Simulateur Python</h3>
+          <p>Petite application de démonstration avec instructions. Voir le dossier <a href="projects/sample-project-1/">projects/sample-project-1</a>.</p>
+          <p class="project-links"><a href="projects/sample-project-1/">Détails</a></p>
+        </article>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><a href="mailto:ton@email.com">ton@email.com</a> · <a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></p>
+      <p>Envoyez un e‑mail à <a href="mailto:you@example.com">you@example.com</a> ou consultez mon <a href="#">profil GitHub</a>.</p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with ❤️ — Remplacez le contenu et publiez sur GitHub Pages.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
