@@ -1,53 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Votre Nom</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Portfolio professionnel — projets, contact, à propos">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marc Kamdem Tcheukaba – Ingénieur nanoélectronique</title>
+  <meta name="description" content="Portfolio de Marc Kamdem Tcheukaba, ingénieur en nanotechnologies option nanoélectronique : microfabrication, conception RF, simulation multiphysique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container">
-      <h1 id="name">Votre Nom</h1>
-      <p class="tagline">Développeur · Designer · Chercheur</p>
-      <nav>
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <a class="brand" href="#accueil">Marc Kamdem</a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>À propos</h2>
-      <p id="bio">Remplacez ce texte par une courte présentation professionnelle. Indiquez vos technologies favorites, votre spécialité et ce qui vous motive.</p>
+  <main>
+
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+      <div class="hero-text">
+        <p class="hero-role">Ingénieur en nanotechnologies, option nanoélectronique</p>
+        <h1>Marc Kamdem Tcheukaba</h1>
+        <p class="hero-pitch">
+          Je conçois, fabrique et caractérise des composants : microfabrication en salle blanche,
+          conception RF et simulation multiphysique.
+        </p>
+        <p class="hero-status">À la recherche d'opportunités en ingénierie électronique.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+          <a class="btn btn-secondary" href="cv.pdf" download>Télécharger mon CV</a>
+        </div>
+      </div>
+
+      <!--
+        EMPLACEMENT PHOTO
+        1. Place ta photo dans le même dossier que index.html
+        2. Nomme-la "photo.jpg" (ou change le nom dans le src ci-dessous)
+        Format conseillé : carré, au moins 600 x 600 px.
+      -->
+      <figure class="wafer">
+        <div class="wafer-placeholder">
+          <span>Ta photo ici</span>
+          <small>Ajoute le fichier <code>photo.jpg</code></small>
+        </div>
+        <img src="photo.jpg" alt="Portrait de Marc Kamdem Tcheukaba" onerror="this.remove()">
+      </figure>
     </section>
 
-    <section id="projects">
-      <h2>Projets</h2>
-      <div class="projects-grid">
-        <article class="project">
-          <h3>Exemple : Simulateur Python</h3>
-          <p>Petite application de démonstration avec instructions. Voir le dossier <a href="projects/sample-project-1/">projects/sample-project-1</a>.</p>
-          <p class="project-links"><a href="projects/sample-project-1/">Détails</a></p>
-        </article>
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>
+          Ingénieur spécialisé en nanotechnologies, option nanoélectronique, je m'appuie sur une
+          solide formation en microfabrication, conception RF et simulation multiphysique. Mon
+          travail porte sur les MEMS, la caractérisation de transistors et la conception de
+          circuits haute fréquence.
+        </p>
+        <p>
+          Mon parcours va de l'électronique embarquée et de l'électronique de puissance au Cameroun
+          jusqu'à la salle blanche en Belgique, puis à la mécatronique avancée à Annecy.
+        </p>
+        <dl class="facts">
+          <div><dt>Langues</dt><dd>Français, anglais</dd></div>
+          <div><dt>Basé à</dt><dd>Annecy, France</dd></div>
+          <div><dt>Loisirs</dt><dd>Basketball, football</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Envoyez un e‑mail à <a href="mailto:you@example.com">you@example.com</a> ou consultez mon <a href="#">profil GitHub</a>.</p>
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <h2>Projets</h2>
+
+      <article class="project">
+        <p class="project-date">2024 – 2025</p>
+        <div class="project-body">
+          <h3>Accéléromètre MEMS à transduction électromagnétique</h3>
+          <p class="project-context">Master spécialisé en nanotechnologies, École polytechnique de Louvain</p>
+          <ul>
+            <li>Conception et simulation d'un accéléromètre MEMS par modélisation multiphysique.</li>
+            <li>Définition du procédé de microfabrication complet : lithographie, PECVD, pulvérisation, RIE et DRIE.</li>
+            <li>Conception d'un transformateur concentrique intégré pour la détection électromagnétique.</li>
+            <li>Analyse des performances : sensibilité, bruit et réponse en fréquence.</li>
+          </ul>
+          <p class="tags"><span>MEMS</span><span>Comsol Multiphysics</span><span>KLayout</span><span>Microfabrication</span></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <p class="project-date">2024 – 2025</p>
+        <div class="project-body">
+          <h3>Transistors FD-SOI 20 nm : effet de la température jusqu'à 450 K</h3>
+          <p class="project-context">Projet académique, caractérisation de composants</p>
+          <ul>
+            <li>Extraction et analyse des figures de mérite : tension de seuil, transconductance maximale, pente sous le seuil, gain intrinsèque et tension d'Early.</li>
+            <li>Identification des points à coefficient de température nul (ZTC) pour le courant de drain et la transconductance, à partir des caractéristiques I-V.</li>
+            <li>Modélisation de la variation de la tension de seuil avec la température par la méthode analytique g<sub>m</sub>/I<sub>D</sub>.</li>
+          </ul>
+          <p class="tags"><span>Caractérisation I-V</span><span>FD-SOI</span><span>g<sub>m</sub>/I<sub>D</sub></span><span>Semi-conducteurs</span></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <p class="project-date">2024 – 2025</p>
+        <div class="project-body">
+          <h3>Matériaux à changement de phase sur polymères flexibles</h3>
+          <p class="project-context">Micro et nanofabrication, salle blanche Winfab</p>
+          <ul>
+            <li>Conception et exécution d'un procédé de micro-usinage de surface et en volume en 8 étapes.</li>
+            <li>Fabrication de membranes flexibles en polyimide portant des commutateurs en dioxyde de vanadium (VO<sub>2</sub>) : photolithographie, RIE, pulvérisation et évaporation par faisceau d'électrons.</li>
+            <li>Validation des couches par MEB, spectroscopie Raman, ellipsométrie et profilométrie, avant libération du silicium sacrificiel par gravure XeF<sub>2</sub>.</li>
+          </ul>
+          <p class="tags"><span>Salle blanche</span><span>VO<sub>2</sub></span><span>Photolithographie</span><span>MEB</span><span>Raman</span></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <p class="project-date">2021 – 2022</p>
+        <div class="project-body">
+          <h3>Variateur de vitesse pour moteur asynchrone triphasé</h3>
+          <p class="project-context">Mémoire de master, ENSP Yaoundé</p>
+          <ul>
+            <li>Dimensionnement d'un variateur pour moteurs asynchrones triphasés de faible et moyenne puissance.</li>
+            <li>Étude des convertisseurs : redresseur, onduleur triphasé et hacheur de freinage.</li>
+            <li>Commande scalaire (V/f) pour la régulation de vitesse, modélisée sous MATLAB/Simulink et simulée sous Proteus.</li>
+            <li>Conception des cartes électroniques (PCB) du variateur.</li>
+          </ul>
+          <p class="tags"><span>Électronique de puissance</span><span>MATLAB/Simulink</span><span>Proteus</span><span>PCB</span></p>
+        </div>
+      </article>
     </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div>
+          <h3>Techniques</h3>
+          <ul>
+            <li>Microfabrication</li>
+            <li>MEMS</li>
+            <li>Caractérisation RF et semi-conducteurs</li>
+            <li>Modélisation et simulation</li>
+            <li>Conception de circuits analogiques et numériques</li>
+            <li>Électronique de puissance</li>
+            <li>Systèmes de commande</li>
+            <li>Conception de PCB</li>
+            <li>Programmation de microcontrôleurs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Logiciels</h3>
+          <ul>
+            <li>Comsol Multiphysics</li>
+            <li>Ansys HFSS</li>
+            <li>KLayout</li>
+            <li>MATLAB</li>
+            <li>SolidWorks</li>
+            <li>Proteus</li>
+            <li>Eagle</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Savoir-être</h3>
+          <ul>
+            <li>Esprit critique</li>
+            <li>Résolution de problèmes</li>
+            <li>Travail en équipe</li>
+            <li>Gestion du stress</li>
+            <li>Grande capacité d'adaptation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section" id="parcours">
+      <h2>Parcours</h2>
+      <div class="path">
+
+        <div>
+          <h3>Formation</h3>
+          <ol class="timeline">
+            <li>
+              <p class="when">2025 – 2026</p>
+              <p class="what">Master Advanced Mechatronics</p>
+              <p class="where">Polytech Annecy-Chambéry, Annecy</p>
+            </li>
+            <li>
+              <p class="when">2024 – 2025</p>
+              <p class="what">Master spécialisé en nanotechnologies, option nanoélectronique</p>
+              <p class="where">École polytechnique de Louvain, Louvain-la-Neuve</p>
+            </li>
+            <li>
+              <p class="when">2020 – 2021</p>
+              <p class="what">Master en mécatronique, option électronique des systèmes embarqués</p>
+              <p class="where">École nationale supérieure polytechnique de Yaoundé</p>
+            </li>
+            <li>
+              <p class="when">2015 – 2018</p>
+              <p class="what">Licence, option électronique, électrotechnique et automatique</p>
+              <p class="where">Université de Yaoundé I</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>Expérience</h3>
+          <ol class="timeline">
+            <li>
+              <p class="when">2024 – 2025</p>
+              <p class="what">Enseignant en sciences et mathématiques, tuteur en maths, physique et chimie</p>
+              <p class="where">SCHOLA ULB, Bruxelles</p>
+            </li>
+            <li>
+              <p class="when">2022 – 2023</p>
+              <p class="what">Enseignant en sciences physiques</p>
+              <p class="where">Institut des techniques, des sciences et des enseignements (ITSE), Mendong</p>
+            </li>
+            <li>
+              <p class="when">2021 – 2022</p>
+              <p class="what">Stagiaire en mécanique et diagnostic automobile</p>
+              <p class="where">NCY Motors, Yaoundé</p>
+              <p class="detail">Diagnostic électronique avec des outils de test automobiles, identification de pannes électriques et mécaniques sur des systèmes embarqués, maintenance, capteurs, actionneurs et diagnostic en temps réel.</p>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">Un projet, un stage, un poste en électronique ? Écris-moi.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:marckamdem@gmail.com">marckamdem@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/marc-kamdem-3a71491b4" target="_blank" rel="noopener">LinkedIn</a></li>
+        <!-- Remplace "ton-pseudo" par ton identifiant GitHub -->
+        <li><a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Made with ❤️ — Remplacez le contenu et publiez sur GitHub Pages.</p>
-    </div>
+    <p>© <span id="year">2026</span> Marc Kamdem Tcheukaba</p>
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
